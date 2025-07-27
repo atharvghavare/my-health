@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY HEALTH</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header>
+            <div class="logo-container">
+                <span class="logo-emoji">🌟</span>
+                <h1>MY HEALTH</h1>
+            </div>
+            <p class="subtitle">Your trusted AI companion for better health and wellness</p>
+        </header>
+
+        <main>
+            <section class="search-section">
+                <h2><span class="icon">🔍</span> Find Health Advice</h2>
+                <div class="search-container">
+                    <form id="advice-form">
+                        <input type="text" 
+                               id="user-input" 
+                               placeholder="Ask me anything about health, nutrition, exercise, or wellness..." 
+                               required
+                               autocomplete="off">
+                        <button type="submit">Get AI Advice</button>
+                    </form>
+                </div>
+                
+                <div class="category-buttons">
+                    <button class="category-btn" data-category="nutrition">
+                        <span class="emoji">🥗</span> Nutrition
+                    </button>
+                    <button class="category-btn" data-category="exercise">
+                        <span class="emoji">💪</span> Exercise
+                    </button>
+                    <button class="category-btn" data-category="sleep">
+                        <span class="emoji">😴</span> Sleep
+                    </button>
+                    <button class="category-btn" data-category="mental">
+                        <span class="emoji">🧠</span> Mental Health
+                    </button>
+                    <button class="category-btn" data-category="hydration">
+                        <span class="emoji">💧</span> Hydration
+                    </button>
+                    <button class="category-btn" data-category="stress">
+                        <span class="emoji">🧘</span> Stress Relief
+                    </button>
+                </div>
+
+                <div id="advice-response" class="hidden">
+                    <div class="response-content"></div>
+                </div>
+            </section>
+
+            <section class="tips-section">
+                <h2><span class="icon">💡</span> Health Tips for You</h2>
+                <div class="tips-container">
+                    <!-- Tips will be added by JavaScript -->
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2024 MY HEALTH. All rights reserved. | Powered by AI</p>
+        </footer>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html> 
